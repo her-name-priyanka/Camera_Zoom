@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finger Zoom</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands@0.4.1675469240/hands.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>🖐️ Finger Zoom</h1>
+        <p class="description">Pinch your thumb and index finger together to zoom out, and separate them to zoom in!</p>
+        
+        <video id="video" playsinline style="display: none;"></video>
+        
+        <canvas id="canvas"></canvas>
+
+        <div class="loader" id="loader">Loading Camera...</div>
+        <div class="error" id="error" style="display: none;">Camera access denied or failed. Please ensure your camera is enabled.</div>
+    </div>
+    
+    <script src="script.js" type="module"></script>
+</body>
+</html>

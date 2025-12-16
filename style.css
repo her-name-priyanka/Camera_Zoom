@@ -1,0 +1,89 @@
+:root {
+    --primary-color: #007BFF; 
+    --background-color: #f4f7fa;
+    --card-color: #ffffff;
+    --text-color: #333;
+    --shadow-light: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background-color: var(--card-color);
+    border-radius: 12px;
+    box-shadow: var(--shadow-light);
+    padding: 30px;
+    text-align: center;
+    max-width: 800px;
+    width: 100%;
+}
+
+h1 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    font-size: 2.5em;
+}
+
+.description {
+    margin-bottom: 25px;
+    color: #666;
+    font-size: 1.1em;
+}
+
+#canvas {
+    width: 100%;
+    max-width: 640px; 
+    height: auto;
+    border: 5px solid var(--primary-color);
+    border-radius: 8px;
+    background-color: #000; 
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+.loader, .error {
+    font-size: 1.2em;
+    padding: 15px;
+    border-radius: 6px;
+    margin-top: 20px;
+}
+
+.loader {
+    background-color: #e0f0ff;
+    color: var(--primary-color);
+}
+
+.error {
+    background-color: #ffe0e0;
+    color: #cc0000;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+    
+    .description {
+        font-size: 1em;
+    }
+}
